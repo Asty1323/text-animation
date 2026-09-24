@@ -11,13 +11,13 @@ const getZoomBtn = document.getElementById("zoomBtn")
 getZoomBtn.addEventListener("click", function() {
 
     // Skriv if/else-strukturen selv herinde, ligesom i billedskift-opgaven.
-        (getWordElem.style.fontSize=true )
+        
     // Nyt i dag: getWordElem.style.fontSize ændrer en CSS-egenskab (fontSize) direkte via JavaScript,
     // på samme måde som getImage.src ændrede et billede i billedskift-opgaven.
     //
     if (this.textContent===`Zoom ind`){ 
-        (getWordElem.style.fontSize=`6rem`);
-        (this.textContent=`Zoom ud`);
+        getWordElem.style.fontSize=`6rem`;
+        this.textContent=`Zoom ud`;
     }
     else {getWordElem.style.fontSize=`3rem`
     this.textContent =`Zoom ind`}
